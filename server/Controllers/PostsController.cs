@@ -13,9 +13,9 @@ namespace server.Controllers
   [ApiController]
   public class PostsController : ControllerBase
   {
-    private readonly PubbyContext _context;
+    private readonly DataContext _context;
 
-    public PostsController(PubbyContext context)
+    public PostsController(DataContext context)
     {
       _context = context;
     }

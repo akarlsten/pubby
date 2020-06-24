@@ -13,9 +13,9 @@ namespace server.Controllers
   [ApiController]
   public class CommentsController : ControllerBase
   {
-    private readonly PubbyContext _context;
+    private readonly DataContext _context;
 
-    public CommentsController(PubbyContext context)
+    public CommentsController(DataContext context)
     {
       _context = context;
     }

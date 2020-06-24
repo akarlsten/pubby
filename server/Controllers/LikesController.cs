@@ -13,9 +13,9 @@ namespace server.Controllers
   [ApiController]
   public class LikesController : ControllerBase
   {
-    private readonly PubbyContext _context;
+    private readonly DataContext _context;
 
-    public LikesController(PubbyContext context)
+    public LikesController(DataContext context)
     {
       _context = context;
     }

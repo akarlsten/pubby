@@ -27,7 +27,7 @@ namespace server
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddDbContext<PubbyContext>(opt =>
+      services.AddDbContext<DataContext>(opt =>
       opt.UseInMemoryDatabase("Pubby"));
       services.AddControllers();
     }

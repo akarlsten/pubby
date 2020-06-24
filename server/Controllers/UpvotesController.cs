@@ -13,9 +13,9 @@ namespace server.Controllers
   [ApiController]
   public class UpvotesController : ControllerBase
   {
-    private readonly PubbyContext _context;
+    private readonly DataContext _context;
 
-    public UpvotesController(PubbyContext context)
+    public UpvotesController(DataContext context)
     {
       _context = context;
     }

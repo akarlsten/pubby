@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace server.Models
 {
-  public class PubbyContext : DbContext
+  public class DataContext : DbContext
   {
-    public PubbyContext(DbContextOptions<PubbyContext> options) : base(options) { }
+    public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
     public DbSet<User> Users { get; set; }
     public DbSet<Post> Posts { get; set; }
